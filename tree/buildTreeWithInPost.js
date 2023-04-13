@@ -17,6 +17,8 @@ function recurBuildTree(A, B, st_in, end_in, st_po, end_po) {
   let ind = A.indexOf(B[end_po]);
   let countLeft = ind - st_in;
   let countRight = end_in - ind;
+  // root.left = this.recurBuildTree(A, B, st_in, ind - 1, st_po, end_po - (end_in - ind + 1));
+  // root.right = this.recurBuildTree(A, B, ind + 1, end_in, st_po + countRight, end_po - 1);
   root.left = recurBuildTree(A, B, st_in, ind - 1, st_po, st_po + countLeft - 1);
   root.right = recurBuildTree(A, B, ind + 1, end_in, st_po + countLeft, end_po - 1);
   return root;
