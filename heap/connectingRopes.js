@@ -2,8 +2,7 @@ class ConnectingRopes {
   constructor() {}
   solve(A) {
     let heap = new MinHeap();
-    let n = A.length;
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < A.length; i++) {
       heap.insert(A[i]);
     }
     let sum = 0;
@@ -64,7 +63,7 @@ class MinHeap {
   //operations
   insert(data) {
     this.storage[this.size] = data;
-    this.size += 1;
+    this.size++;
     this.heapifyUp(this.size - 1);
   }
   heapifyUp(index) {
@@ -81,7 +80,7 @@ class MinHeap {
     }
     let data = this.storage[0];
     this.storage[0] = this.storage[this.size - 1];
-    this.size -= 1;
+    this.size--;
     this.heapifyDown(0);
     return data;
   }
