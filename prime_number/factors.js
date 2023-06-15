@@ -14,3 +14,4 @@ function factors(A) {
 }
 
 console.log(factors(25));
+console.log(factors(24));
