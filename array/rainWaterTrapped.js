@@ -15,5 +15,6 @@ function rainWaterTrapped(A) {
   }
   return ans;
 }
+
 console.log(rainWaterTrapped([0, 1, 0, 2]));
 console.log(rainWaterTrapped([1, 2]));
