@@ -57,16 +57,23 @@ function upperBound(arr, X) {
   }
   return ans;
 }
+// console.log(
+//   minimumDifference(2, 2, [
+//     [8, 4],
+//     [6, 8],
+//   ])
+// ); // 0
+// console.log(
+//   minimumDifference(3, 2, [
+//     [7, 3],
+//     [2, 1],
+//     [4, 9],
+//   ])
+// ); // 1
+
 console.log(
-  minimumDifference(2, 2, [
-    [8, 4],
-    [6, 8],
-  ])
-); // 0
-console.log(
-  minimumDifference(3, 2, [
-    [7, 3],
-    [2, 1],
-    [4, 9],
+  minimumDifference(2, 5, [
+    [4, 5, 9, 1, 2],
+    [6, 5, 7, 3, 4],
   ])
 ); // 1
